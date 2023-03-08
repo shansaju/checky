@@ -17,13 +17,18 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
   </head>
   <body id="indexBody">
      <div style="visibility:hidden">
-    <audio id="myAudio" autoplay loop>
-    <source src="./theme/MahaanBasedBgm.mp3" type="audio/mpeg">
-  </audio>
+    <script>
+    var sound = new Howl({
+      src: ['MahaanBasedBgm.mp3'],
+      autoplay: true,
+      loop: true
+    });
+  </script>
   
 </div>
   <div class="site-wrap">
